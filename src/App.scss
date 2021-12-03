@@ -1,0 +1,61 @@
+// src/App.scss
+
+@import './style/config';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  color: $text-color;
+  font-family: 'Alatsi', serif;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  width: 100%;
+}
+
+.App {
+  // to center the app in the middle of the page
+  max-width: 40rem;
+  margin: 0 auto;
+
+  // but add some spacing above
+  margin-top: 2rem;
+
+  // horizontal (internal) spacing
+  padding: 0 1rem;
+}

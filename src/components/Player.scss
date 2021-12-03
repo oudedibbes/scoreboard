@@ -1,0 +1,20 @@
+// src/components/Player.scss
+@import '../style/config';
+
+.Players-item {
+  position: relative;
+  .percentage_coloring {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.4rem;
+    background: $primary; // fallback for if the browser does not support gradients
+    background: linear-gradient(90deg, $secondary, $primary);
+    transition: all 0.33s ease;
+  }
+
+  &:hover .percentage_coloring {
+    transform: scale(1, 2);
+    background: linear-gradient(90deg, #bf0073, #f20f0f);
+  }
+}
